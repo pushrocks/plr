@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 4
+- stable
+deploy:
+  provider: npm
+  email: npm@lossless.digital
+  api_key:
+    secure: jtiNv6uUQV8iuIh82cD86spbcWKhq1IPxrwoUdLqZGXFJf+o6ftnfYAsa3D6oBLh0TF+R13WdF+NA8qRXST4y/WsTI4H0oxuHdkDRmDFPqJOIBh9jgf/9x7wRtd398FI0L7FMXAVPLlkCWY7BxRxBuDndIaRHE3MK6Gmq2Ax/3GEI+yfk1DxjE3ywZPJk7GJ4K7SRw/RtYBgm8K5FLIhjJicGjcA83q4QxNNnHQ8eB84rpaxlO5BWj8OjRdLSK6SGKzCF+WQLDB3lsFhAR74qOsu2GJY9wa0czwljsku7atpJ1LbR+pGLmybr5k4JhdSfzza9eXFjCGQNk3mzNX2CFF3fbxGgac9HUIZy+E4yGQhPiNZ2nq9zM+r3trJ8raGHzil9JPvVZTADAhDKZkeRp8EKuOmTcjr+h/9usPk6+XVLO2knWhm99upqeor/GzeieL8DisWSu3nYJE54gfHE8mq4Bredap9dAZ/Ov6XopvGTTNxHY0Bmd+NpcEsi2q/GBa9lHg1OeDX2br0lCgSn0T8meSvK6Jor683YCxcQZx2xD6bnXzTcv+XVwtfLmxhNFo5Ubkt2BTvW+r0ve/hK+EMU74xn3o+42iwHgr26+BtJE7S3SrRMWXNeBwOKhfu3wNGWMQylY5SCrg3rFyBi+dJeCtYqfVwlKdVf44a76s=
+  on:
+    tags: true
+    repo: pushrocks/plr
