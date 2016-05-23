@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/pushrocks/plr/issues"
   },
-  "homepage": "https://github.com/pushrocks/plr#readme"
+  "homepage": "https://github.com/pushrocks/plr#readme",
+  "devDependencies": {
+    "npmts": "^5.1.13"
+  },
+  "dependencies": {
+    "beautylog": "^5.0.5",
+    "early": "^2.0.1",
+    "q": "^1.4.1",
+    "smartcli": "0.0.11",
+    "smartfile": "^3.0.9",
+    "taskbuffer": "^0.1.3"
+  }
 }
