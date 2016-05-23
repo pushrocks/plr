@@ -22,14 +22,16 @@
   },
   "homepage": "https://github.com/pushrocks/plr#readme",
   "devDependencies": {
-    "npmts": "^5.1.13"
+    "npmts": "^5.1.13",
+    "typings-test": "^1.0.1"
   },
   "dependencies": {
     "beautylog": "^5.0.5",
     "early": "^2.0.1",
     "q": "^1.4.1",
     "smartcli": "0.0.11",
-    "smartfile": "^3.0.9",
-    "taskbuffer": "^0.1.3"
+    "smartfile": "^3.0.10",
+    "taskbuffer": "^0.1.3",
+    "typings-global": "^1.0.3"
   }
 }
