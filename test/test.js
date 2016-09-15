@@ -1,4 +1,0 @@
-"use strict";
-require("typings-test");
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLFFBQU8sY0FBYyxDQUFDLENBQUEiLCJmaWxlIjoidGVzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBcInR5cGluZ3MtdGVzdFwiO1xyXG5pbXBvcnQgKiBhcyBwbHIgZnJvbSBcIi4uL2Rpc3QvaW5kZXguanNcIjsiXX0=

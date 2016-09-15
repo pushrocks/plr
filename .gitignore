@@ -1,4 +1,4 @@
 node_modules/
-docs/
+pages/
+public/
 coverage/
-ts/typings/

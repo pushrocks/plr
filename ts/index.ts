@@ -1,6 +1,9 @@
-import "./typings-global";
-import * as early from "early";
-early.start("PLR");
-import plugins = require("./plr.plugins");
+import * as early from 'early'
+early.start('plr')
+import plugins = require('./plr.plugins')
 
-export let rundir = function(){};
+early.stop().then(() => {
+    plugins.beautylog.figletSync('plr')
+})
+
+

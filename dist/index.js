@@ -1,7 +1,8 @@
 "use strict";
-require("./typings-global");
-var early = require("early");
-early.start("PLR");
-exports.rundir = function () { };
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxRQUFPLGtCQUFrQixDQUFDLENBQUE7QUFDMUIsSUFBWSxLQUFLLFdBQU0sT0FBTyxDQUFDLENBQUE7QUFDL0IsS0FBSyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUdSLGNBQU0sR0FBRyxjQUFXLENBQUMsQ0FBQyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBcIi4vdHlwaW5ncy1nbG9iYWxcIjtcclxuaW1wb3J0ICogYXMgZWFybHkgZnJvbSBcImVhcmx5XCI7XHJcbmVhcmx5LnN0YXJ0KFwiUExSXCIpO1xyXG5pbXBvcnQgcGx1Z2lucyA9IHJlcXVpcmUoXCIuL3Bsci5wbHVnaW5zXCIpO1xyXG5cclxuZXhwb3J0IGxldCBydW5kaXIgPSBmdW5jdGlvbigpe307Il19
+const early = require('early');
+early.start('plr');
+const plugins = require('./plr.plugins');
+early.stop().then(() => {
+    plugins.beautylog.figletSync('plr');
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsTUFBWSxLQUFLLFdBQU0sT0FDdkIsQ0FBQyxDQUQ2QjtBQUM5QixLQUFLLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFBO0FBQ2xCLE1BQU8sT0FBTyxXQUFXLGVBQWUsQ0FBQyxDQUFBO0FBRXpDLEtBQUssQ0FBQyxJQUFJLEVBQUUsQ0FBQyxJQUFJLENBQUM7SUFDZCxPQUFPLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQyxLQUFLLENBQUMsQ0FBQTtBQUN2QyxDQUFDLENBQUMsQ0FBQSJ9
