@@ -1,7 +1,10 @@
 import 'typings-global'
 export import beautylog = require('beautylog')
 export import lodash = require('lodash')
+export import npmextra = require('npmextra')
+export import path = require('path')
 export import q = require('q')
+export import smartbrowser = require('smartbrowser')
 export import smartfile = require('smartfile')
 export import smartpath = require('smartpath')
 export import smartcli = require('smartcli')

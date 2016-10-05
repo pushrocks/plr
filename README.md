@@ -1,7 +1,9 @@
 # plr
-build tool for polymer elements
+build tool for polymer and angular
 
-plr is meant for automating steps during polymer module creation and maintanance.
+> in Alpha, focusing on Angular 2 for the moment
+
+plr is meant for automating steps by convention during angular/polymer module creation, testing and maintanance.
 
 It allows you to
 * use SASS
