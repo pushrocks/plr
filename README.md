@@ -19,7 +19,7 @@ build tool angular frontend projects
 [![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-# Purpose
+## Purpose
 
 plr is meant for automating steps by convention during angular module creation, testing and maintanance.
 
@@ -43,4 +43,4 @@ You then configure plr by using a npmextra.json at the root of your project.
 
 If you do not cinfigure anything at all, plr will work in default mode (which is great)
 
-# Getting started
+## Getting started
