@@ -40,6 +40,7 @@
     "smartbrowser": "^1.0.1",
     "smartcli": "1.0.9",
     "smartfile": "^4.0.24",
+    "smartjspm": "^1.0.7",
     "smartpath": "^3.2.5",
     "taskbuffer": "^1.0.8",
     "tsn": "^2.0.9",
