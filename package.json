@@ -1,7 +1,7 @@
 {
   "name": "plr",
   "version": "1.0.2",
-  "description": "build tool for polymer elements",
+  "description": "build tool angular frontend projects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {

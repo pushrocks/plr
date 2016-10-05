@@ -16,7 +16,7 @@ export let run = (): plugins.q.Promise<IPlrConfig> => {
 
     let defaultSettings: IPlrConfig = {
         ts: {
-            "./angular/**/*.ts": "./distweb/"
+            './angular/**/*.ts': './distweb/'
         }
     }
 
