@@ -1,9 +1,9 @@
 /// <reference types="q" />
-import * as plugins from './plr.plugins';
 export interface IPlrConfig {
     ts: any;
+    tsOptions: any;
 }
 /**
  * evaluates the config for plr
  */
-export declare let run: () => plugins.q.Promise<IPlrConfig>;
+export declare let run: () => Q.Promise<IPlrConfig>;

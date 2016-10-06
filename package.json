@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npmts --notest  && npm run prepareTest && npm run plrTest)",
+    "test": "(npm run prepareTest && npmts --notest && npm run plrTest)",
     "plrTest": "(cd ./test/ && node ../dist/index.js)",
     "prepareTest": "(rm -rf test/ && mkdir test && cd test/ && git clone https://gitlab.com/sandboxzone/sandbox-plr.git .)"
   },
@@ -43,7 +43,7 @@
     "smartjspm": "^1.0.7",
     "smartpath": "^3.2.5",
     "taskbuffer": "^1.0.8",
-    "tsn": "^2.0.9",
+    "tsn": "^2.0.10",
     "typings-global": "^1.0.14"
   }
 }

@@ -4,7 +4,8 @@ import * as paths from './plr.paths'
 import { plrOra } from './plr.promisechain'
 
 export interface IPlrConfig {
-    ts: any
+    ts: any,
+    tsOptions: any
 }
 
 /**
@@ -16,7 +17,10 @@ export let run = (): plugins.q.Promise<IPlrConfig> => {
 
     let defaultSettings: IPlrConfig = {
         ts: {
-            './angular/**/*.ts': './distweb/'
+            './angular/**/*.ts': './distweb/app'
+        },
+        tsOptions: {
+
         }
     }
 

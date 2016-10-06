@@ -1,11 +1,10 @@
 import * as early from 'early'
 early.start('plr')
 import * as plugins from './plr.plugins'
-import * as plrPromisechain from './plr.promisechain'
-
+import * as plrCli from './plr.cli'
 early.stop().then(() => {
-    plugins.beautylog.figletSync('plr')
-    plrPromisechain.run()
+    let loaded = plugins // makes sure that plugins get really loaded
+    plrCli.run()
 })
 
 
