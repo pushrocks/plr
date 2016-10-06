@@ -1,9 +1,9 @@
 import * as early from 'early'
 early.start('plr')
-import * as plugins from './plr.plugins'
-import * as plrCli from './plr.cli'
+import * as plugins from './plr.all.plugins'
+let loaded = plugins // make sure things get loaded
+import * as plrCli from './plr.all.cli'
 early.stop().then(() => {
-    let loaded = plugins // makes sure that plugins get really loaded
     plrCli.run()
 })
 

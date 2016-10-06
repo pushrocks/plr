@@ -1,4 +1,4 @@
-import * as plugins from './plr.plugins'
+import * as plugins from './plr.all.plugins'
 
 // directories
 // -- package related

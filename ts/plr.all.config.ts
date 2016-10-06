@@ -1,7 +1,8 @@
-import * as plugins from './plr.plugins'
-import * as paths from './plr.paths'
+import * as paths from './plr.all.paths'
+import * as plugins from './plr.all.plugins'
+import { plrOra } from './plr.all.log'
 
-import { plrOra } from './plr.promisechain'
+import * as q from 'q'
 
 export interface IPlrConfig {
     ts: any,
@@ -11,8 +12,8 @@ export interface IPlrConfig {
 /**
  * evaluates the config for plr
  */
-export let run = (): plugins.q.Promise<IPlrConfig> => {
-    let done = plugins.q.defer<IPlrConfig>()
+export let run = (): q.Promise<IPlrConfig> => {
+    let done = q.defer<IPlrConfig>()
     plrOra.text('evaluating npmextra.json')
 
     let defaultSettings: IPlrConfig = {

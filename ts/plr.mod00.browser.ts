@@ -1,5 +1,5 @@
-import * as plugins from './plr.plugins'
-import * as paths from './plr.paths'
+import * as paths from './plr.all.paths'
+import * as plugins from './plr.mod00.plugins'
 
 export let smartbrowserInst: plugins.smartbrowser.Smartbrowser
 

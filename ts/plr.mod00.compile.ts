@@ -1,7 +1,7 @@
-import 'typings-global'
-import plugins = require('./plr.plugins')
-import paths = require('./plr.paths')
-import {plrOra} from './plr.promisechain'
+import {} from 'plr.all.config'
+import plugins = require('./plr.mod00.plugins')
+import paths = require('./plr.all.paths')
+import { plrOra } from './plr.mod00'
 
 export let run = function (configArg) {
     let done = plugins.q.defer()
