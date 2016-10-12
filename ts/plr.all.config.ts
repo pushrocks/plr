@@ -1,8 +1,8 @@
+import * as q from 'q'
+
 import * as paths from './plr.all.paths'
 import * as plugins from './plr.all.plugins'
 import { plrOra } from './plr.all.log'
-
-import * as q from 'q'
 
 export interface IPlrConfig {
     ts: any,

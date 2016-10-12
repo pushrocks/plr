@@ -25,15 +25,15 @@
   "homepage": "https://github.com/pushrocks/plr#readme",
   "devDependencies": {
     "@types/should": "^8.1.30",
-    "should": "^11.1.0",
+    "should": "^11.1.1",
     "typings-test": "^1.0.3"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.36",
-    "@types/q": "0.0.31",
+    "@types/lodash": "^4.14.37",
+    "@types/q": "0.0.32",
     "beautylog": "^5.0.23",
     "early": "^2.0.35",
-    "lodash": "^4.16.3",
+    "lodash": "^4.16.4",
     "npmextra": "^2.0.3",
     "npmts-g": "^5.2.8",
     "q": "^1.4.1",
@@ -42,8 +42,9 @@
     "smartfile": "^4.0.24",
     "smartjspm": "^1.0.7",
     "smartpath": "^3.2.5",
+    "smartsystem": "^1.0.5",
     "taskbuffer": "^1.0.8",
-    "tsn": "^2.0.10",
+    "tsn": "^2.0.11",
     "typings-global": "^1.0.14"
   }
 }

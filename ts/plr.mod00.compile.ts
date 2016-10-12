@@ -1,10 +1,12 @@
-import {} from 'plr.all.config'
-import plugins = require('./plr.mod00.plugins')
+import * as q from 'q'
+
 import paths = require('./plr.all.paths')
-import { plrOra } from './plr.mod00'
+import { plrOra } from './plr.all.log'
+
+import plugins = require('./plr.mod00.plugins')
 
 export let run = function (configArg) {
-    let done = plugins.q.defer()
+    let done = q.defer()
     let config = configArg
     plrOra.text(`now compiling TypeScript for Angular`)
     plugins.tsn.compileGlobStringObject(config.ts,config.tsOptions)

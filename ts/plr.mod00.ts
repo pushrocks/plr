@@ -1,9 +1,11 @@
+import * as q from 'q'
+
 import * as plrConfig from './plr.all.config'
+import { plrOra } from './plr.all.log'
 
 import * as plugins from './plr.mod00.plugins'
 import * as plrCompile from './plr.mod00.compile'
 
-import { plrOra } from './plr.all.log'
 
 export let run = (configArg: plrConfig.IPlrConfig): plugins.q.Promise<void> => {
     let done = plugins.q.defer<void>()
