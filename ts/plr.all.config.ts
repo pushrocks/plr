@@ -12,7 +12,7 @@ export interface IPlrConfig {
 /**
  * evaluates the config for plr
  */
-export let run = (): q.Promise<IPlrConfig> => {
+export let run = (argvArg): q.Promise<IPlrConfig> => {
     let done = q.defer<IPlrConfig>()
     plrOra.text('evaluating npmextra.json')
 
