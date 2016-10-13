@@ -8,7 +8,9 @@ export let run = (): q.Promise<void> => {
     let localCli = new plugins.smartcli.Smartcli()
     localCli.standardTask().then((argvArg) => {
         plugins.beautylog.figletSync('plr')
-        plrMods.run()
+        plrMods.mod01.load().then((mod01) => {
+            mod01.run()
+        })
         done.resolve()
     })
     localCli.startParse()

@@ -7,8 +7,8 @@ import * as plugins from './plr.mod00.plugins'
 import * as plrCompile from './plr.mod00.compile'
 
 
-export let run = (configArg: plrConfig.IPlrConfig): plugins.q.Promise<void> => {
-    let done = plugins.q.defer<void>()
+export let run = (configArg: plrConfig.IPlrConfig): q.Promise<void> => {
+    let done = q.defer<void>()
     plrOra.start()
     plrCompile.run(configArg)
         .then(() => {
