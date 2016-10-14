@@ -6,7 +6,8 @@ import { plrOra } from './plr.all.log'
 
 export interface IPlrConfig {
     ts: any,
-    tsOptions: any
+    tsOptions: any,
+    testTs: any
 }
 
 /**
@@ -22,6 +23,9 @@ export let run = (argvArg): q.Promise<IPlrConfig> => {
         },
         tsOptions: {
 
+        },
+        testTs: {
+            './test/**/*.ts': './test'
         }
     }
 

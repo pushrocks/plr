@@ -1,4 +1,4 @@
-export * from './plr.all.plugins'
+export * from '../plr.all.plugins'
 
 import * as smartbrowser from 'smartbrowser'
 import * as smartfile from 'smartfile'
