@@ -1,9 +1,12 @@
 {
   "name": "plr",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "description": "build tool angular frontend projects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "bin": {
+    "plr": "dist/cli.js"
+  },
   "scripts": {
     "test": "(npm run prepareTest && npmts --notest && npm run plrTest && npm run plrTestInstall && npm run plrTestServe)",
     "plrTest": "(cd ./test/ && node ../dist/cli.js)",
@@ -31,22 +34,24 @@
     "typings-test": "^1.0.3"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.37",
+    "@types/lodash": "^4.14.40",
     "@types/q": "0.0.32",
-    "beautylog": "^5.0.23",
+    "@types/shelljs": "^0.3.33",
+    "beautylog": "^6.0.0",
     "early": "^2.0.35",
-    "lodash": "^4.16.4",
+    "lodash": "^4.17.2",
     "npmextra": "^2.0.3",
     "npmts-g": "^5.2.8",
     "q": "^1.4.1",
+    "shelljs": "^0.7.5",
     "smartbrowser": "^1.0.1",
-    "smartcli": "1.0.10",
-    "smartfile": "^4.0.24",
+    "smartcli": "1.0.15",
+    "smartfile": "^4.1.0",
     "smartjspm": "^1.0.7",
     "smartpath": "^3.2.5",
     "smartsystem": "^1.0.9",
     "taskbuffer": "^1.0.8",
-    "tsn": "^2.0.11",
+    "tsn": "^2.0.13",
     "typings-global": "^1.0.14"
   }
 }
