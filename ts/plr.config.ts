@@ -25,7 +25,6 @@ export let run = (argvArg): q.Promise<IPlrConfig> => {
 
         },
         testTs: {
-            './test/**/*.ts': './test'
         }
     }
 
