@@ -7,7 +7,7 @@ import * as plugins from './mod.plugins'
 
 export let run = (configArg: IPlrConfig) => {
     let done = q.defer()
-    plugins.smartfile.fs.removeSync(paths.distWeb)
+    plugins.smartfile.fs.removeSync(paths.distWebApp)
     done.resolve(configArg)
     return done.promise
 }
