@@ -17,4 +17,13 @@ export let distWeb = plugins.path.join(cwd, 'distweb') // called distweb to go a
  * distWebApp holds the angular files (by convention)
  */
 export let distWebApp = plugins.path.join(distWeb, 'app')
+
+/**
+ * angular is the default directory to expect the source angular ts files in
+ */
 export let angular = plugins.path.join(cwd, 'angular')
+
+/**
+ * plrBundle directory
+ */
+export let plrBundle = plugins.path.join(cwd,'plr_bundle')

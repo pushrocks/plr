@@ -8,7 +8,7 @@ export let run = () => {
     let done = q.defer<SmartJspm>()
     let localSmartjspm = new SmartJspm({
         npmDevDir: paths.cwd,
-        targetDir: plugins.path.join(paths.cwd, 'plr_build/')
+        targetDir: paths.distWeb
     })
     localSmartjspm.readNpmextraJspmDependencies(plugins.path.join(paths.cwd))
     plugins.beautylog.info('Now installing dependencies for npm development dir')

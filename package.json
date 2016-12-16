@@ -8,9 +8,10 @@
     "plr": "dist/cli.js"
   },
   "scripts": {
-    "test": "(npm run prepareTest && npmts --notest && npm run plrTest && npm run plrTestInstall && npm run plrTestServe)",
+    "test": "(npm run prepareTest && npmts --notest && npm run plrTest && npm run plrTestInstall && npm run plrTestBundle && npm run plrTestServe)",
     "plrTest": "(cd ./test/ && node ../dist/cli.js)",
     "plrTestInstall": "(cd ./test/ && node ../dist/cli.js install)",
+    "plrTestBundle": "(cd ./test/ && node ../dist/cli.js bundle)",
     "plrTestServe": "(cd ./test/ && node ../dist/cli.js serve)",
     "prepareTest": "(rm -rf test/ && mkdir test && cd test/ && git clone https://gitlab.com/sandboxzone/sandbox-plr.git .)"
   },
@@ -30,26 +31,26 @@
   "homepage": "https://github.com/pushrocks/plr#readme",
   "devDependencies": {
     "@types/should": "^8.1.30",
-    "should": "^11.1.1",
+    "should": "^11.1.2",
     "typings-test": "^1.0.3"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.40",
+    "@types/lodash": "^4.14.43",
     "@types/q": "0.0.32",
     "@types/shelljs": "^0.3.33",
     "beautylog": "^6.0.0",
     "early": "^2.0.35",
     "lodash": "^4.17.2",
     "npmextra": "^2.0.3",
-    "npmts-g": "^5.2.8",
+    "npmts-g": "^5.2.10",
     "q": "^1.4.1",
     "shelljs": "^0.7.5",
     "smartbrowser": "^1.0.1",
     "smartcli": "1.0.15",
     "smartfile": "^4.1.0",
-    "smartjspm": "^1.0.7",
-    "smartpath": "^3.2.5",
-    "smartsystem": "^1.0.9",
+    "smartjspm": "^1.0.12",
+    "smartpath": "^3.2.7",
+    "smartsystem": "^1.0.12",
     "taskbuffer": "^1.0.8",
     "tsn": "^2.0.13",
     "typings-global": "^1.0.14"

@@ -8,38 +8,48 @@ import { plrOra } from './plr.log'
 export let run = (): q.Promise<void> => {
     let done = q.defer<void>()
     let localCli = new plugins.smartcli.Smartcli()
+
+    // Task Standard
     localCli.standardTask() // the standardTask
-        .then(argvArg => { // get the config
-            let done = q.defer<plrConfig.IPlrConfig>()
-            plugins.beautylog.figletSync('plr')
-            plrOra.start('Loading additional modules')
-            plrConfig.run(argvArg).then(configArg => {
-                done.resolve(configArg)
-            })
-            return done.promise
-        })
+        .then(plrConfig.run)
         .then(configArg => { // load the standard module and execute it
-            plrMods.modStandard.load()
+            return plrMods.modStandard.load()
                 .then((modStandard) => {
-                    modStandard.run(configArg)
+                    return modStandard.run(configArg)
                 })
-            done.resolve()
+                .then(() => {
+                    done.resolve()
+                })
         }).catch(err => {
             if (err instanceof Error) {
                 console.log(err)
             }
         })
+
+    // Task Install
     localCli.addCommand({ commandName: 'install' })
-        .then(argvArg => {
-            plrMods.modInstall.load()
+        .then(plrConfig.run)
+        .then(configArg => {
+            return plrMods.modInstall.load()
                 .then(modInstall => {
-                    modInstall.run()
+                    return modInstall.run()
                 })
         }).catch(err => {
             if (err instanceof Error) {
                 console.log(err)
             }
         })
+
+    // Task Bundle
+    localCli.addCommand({ commandName: 'bundle' })
+        .then(plrConfig.run)
+        .then(configArg => {
+            return plrMods.modBundle.load().then(modBundle => {
+                return modBundle.run()
+            })
+        })
+
+    // Task Serve
     localCli.addCommand({ commandName: 'serve' })
         .then().catch(err => {
             if (err instanceof Error) {

@@ -1,3 +1,4 @@
 export * from '../plr.plugins';
 import * as shelljs from 'shelljs';
-export { shelljs };
+import * as smartfile from 'smartfile';
+export { shelljs, smartfile };

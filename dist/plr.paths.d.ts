@@ -9,4 +9,11 @@ export declare let distWeb: string;
  * distWebApp holds the angular files (by convention)
  */
 export declare let distWebApp: string;
+/**
+ * angular is the default directory to expect the source angular ts files in
+ */
 export declare let angular: string;
+/**
+ * plrBundle directory
+ */
+export declare let plrBundle: string;
