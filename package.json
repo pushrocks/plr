@@ -1,6 +1,6 @@
 {
   "name": "plr",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "build tool angular frontend projects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
