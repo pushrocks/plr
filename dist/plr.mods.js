@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const smartsystem_1 = require("smartsystem");
 /**
  * modStandard is the standard Task!
@@ -13,4 +14,4 @@ exports.modInstall = new smartsystem_1.LazyModule('./mod_install/index', __dirna
  * modBundle installs dependencies into the dev directory
  */
 exports.modBundle = new smartsystem_1.LazyModule('./mod_bundle/index', __dirname);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxyLm1vZHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9wbHIubW9kcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0EsNkNBQXdDO0FBU3hDOzs7R0FHRztBQUNRLFFBQUEsV0FBVyxHQUFHLElBQUksd0JBQVUsQ0FBc0Isc0JBQXNCLEVBQUMsU0FBUyxDQUFDLENBQUE7QUFFOUY7O0dBRUc7QUFDUSxRQUFBLFVBQVUsR0FBRyxJQUFJLHdCQUFVLENBQXFCLHFCQUFxQixFQUFDLFNBQVMsQ0FBQyxDQUFBO0FBRTNGOztHQUVHO0FBQ1EsUUFBQSxTQUFTLEdBQUcsSUFBSSx3QkFBVSxDQUFvQixvQkFBb0IsRUFBQyxTQUFTLENBQUMsQ0FBQSJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxyLm1vZHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9wbHIubW9kcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDZDQUF3QztBQVN4Qzs7O0dBR0c7QUFDUSxRQUFBLFdBQVcsR0FBRyxJQUFJLHdCQUFVLENBQXNCLHNCQUFzQixFQUFDLFNBQVMsQ0FBQyxDQUFBO0FBRTlGOztHQUVHO0FBQ1EsUUFBQSxVQUFVLEdBQUcsSUFBSSx3QkFBVSxDQUFxQixxQkFBcUIsRUFBQyxTQUFTLENBQUMsQ0FBQTtBQUUzRjs7R0FFRztBQUNRLFFBQUEsU0FBUyxHQUFHLElBQUksd0JBQVUsQ0FBb0Isb0JBQW9CLEVBQUMsU0FBUyxDQUFDLENBQUEifQ==
