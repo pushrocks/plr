@@ -1,27 +1,27 @@
 # agl
-build tool for angular frontend projects
-
-> in Alpha, focusing on Angular 2 for the moment
+build tool angular frontend projects
 
 ## Availabililty
-[![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/plr)
-[![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/pushrocks/plr)
-[![git](https://push.rocks/assets/repo-button-mirror.svg)](https://github.com/pushrocks/plr)
-[![docs](https://push.rocks/assets/repo-button-docs.svg)](https://pushrocks.gitlab.io/plr/)
+[![npm](https://gitzone.gitlab.io/assets/repo-button-npm.svg)](https://www.npmjs.com/package/agl)
+[![git](https://gitzone.gitlab.io/assets/repo-button-git.svg)](https://GitLab.com/gitzone/agl)
+[![git](https://gitzone.gitlab.io/assets/repo-button-mirror.svg)](https://github.com/gitzone/agl)
+[![docs](https://gitzone.gitlab.io/assets/repo-button-docs.svg)](https://gitzone.gitlab.io/agl/)
 
 ## Status for master
-[![build status](https://gitlab.com/pushrocks/plr/badges/master/build.svg)](https://gitlab.com/pushrocks/plr/commits/master)
-[![coverage report](https://gitlab.com/pushrocks/plr/badges/master/coverage.svg)](https://gitlab.com/pushrocks/plr/commits/master)
-[![Dependency Status](https://david-dm.org/pushrocks/plr.svg)](https://david-dm.org/pushrocks/plr)
-[![bitHound Dependencies](https://www.bithound.io/github/pushrocks/plr/badges/dependencies.svg)](https://www.bithound.io/github/pushrocks/plr/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/pushrocks/plr/badges/code.svg)](https://www.bithound.io/github/pushrocks/plr)
+[![build status](https://GitLab.com/gitzone/agl/badges/master/build.svg)](https://GitLab.com/gitzone/agl/commits/master)
+[![coverage report](https://GitLab.com/gitzone/agl/badges/master/coverage.svg)](https://GitLab.com/gitzone/agl/commits/master)
+[![npm downloads per month](https://img.shields.io/npm/dm/agl.svg)](https://www.npmjs.com/package/agl)
+[![Dependency Status](https://david-dm.org/gitzonetools/agl.svg)](https://david-dm.org/gitzonetools/agl)
+[![bitHound Dependencies](https://www.bithound.io/github/gitzonetools/agl/badges/dependencies.svg)](https://www.bithound.io/github/gitzonetools/agl/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/gitzonetools/agl/badges/code.svg)](https://www.bithound.io/github/gitzonetools/agl)
 [![TypeScript](https://img.shields.io/badge/TypeScript-2.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-## Purpose
+## Usage
+Use TypeScript for best in class instellisense.
 
-plr is meant for automating steps by convention during angular module creation, testing and maintanance.
+plr is meant for automating steps by convention during angular (>= 2.x.x) app creation, testing and maintanance.
 
 It allows you to
 
@@ -32,16 +32,9 @@ It allows you to
 * serve your project during production
 * use npmts for any backend parts
 
-## Install
-```shell
-npm install plr --save-dev
-```
+For further information read the linked docs at the top of this README.
 
-## Usage
-to use plr simply set the scripts test section in your pacakge.json to `(plr)`
-You then configure plr by using a npmextra.json at the root of your project.
+> MIT licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
+| By using this npm module you agree to our [privacy policy](https://lossless.gmbH/privacy.html)
 
-If you do not cinfigure anything at all, plr will work in default mode (which is great)
-
-## Getting started
-// TODO
+[![repo-footer](https://gitzone.gitlab.io/assets/repo-footer.svg)](https://git.zone)
