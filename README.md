@@ -1,4 +1,4 @@
-# plr
+# agl
 build tool for angular frontend projects
 
 > in Alpha, focusing on Angular 2 for the moment
