@@ -13,7 +13,9 @@
     "plrTestInstall": "(cd ./test/ && node ../dist/cli.js install)",
     "plrTestBundle": "(cd ./test/ && node ../dist/cli.js bundle)",
     "plrTestServe": "(cd ./test/ && node ../dist/cli.js serve)",
-    "prepareTest": "(rm -rf test/ && mkdir test && cd test/ && git clone https://gitlab.com/sandboxzone/sandbox-plr.git .)"
+    "prepareTest": "(rm -rf test/ && mkdir test && cd test/ && git clone https://gitlab.com/sandboxzone/sandbox-plr.git .)",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -52,6 +54,8 @@
     "smartsystem": "^1.0.12",
     "taskbuffer": "^1.0.8",
     "tsn": "^2.0.13",
-    "typings-global": "^1.0.14"
-  }
+    "typings-global": "^1.0.14",
+    "snyk": "^1.70.2"
+  },
+  "snyk": true
 }
